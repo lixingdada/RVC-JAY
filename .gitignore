@@ -1,0 +1,66 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+
+# ===== 虚拟环境 =====
+.venv/
+venv/
+runtime/
+
+# ===== 临时文件与输出 =====
+TEMP/
+opt/
+*.tmp
+*.wav.tmp
+
+# ===== 训练日志与数据 =====
+logs/
+
+# ===== 下载缓存 =====
+.model-downloads/
+*.metadata
+
+# ===== 大模型文件（超100MB，需单独下载）=====
+# HuBERT
+assets/hubert_base/pytorch_model.bin
+# RMVPE
+assets/rmvpe/rmvpe.pt
+# 预训练底模（v1 + v2）
+assets/pretrained/D*.pth
+assets/pretrained/f0D*.pth
+assets/pretrained/G*.pth
+assets/pretrained/f0G*.pth
+assets/pretrained_v2/D*.pth
+assets/pretrained_v2/f0D*.pth
+assets/pretrained_v2/G*.pth
+assets/pretrained_v2/f0G*.pth
+# 人声分离模型
+assets/pymss_weights/*.ckpt
+# 训练完整存档（418MB）
+assets/weights/singer_e50.pth
+# HF 缓存
+assets/.cache/
+assets/rmvpe/.cache/
+
+# ===== FFmpeg（可重新下载）=====
+ffmpeg.exe
+ffprobe.exe
+
+# ===== IDE / 编辑器 =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== 操作系统 =====
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ===== Trae 工具产物 =====
+.trae-html-share-packages/
