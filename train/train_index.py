@@ -4,6 +4,11 @@ import sys
 import traceback
 import glob
 
+# 强制将项目根目录加入 sys.path，解决子进程运行时找不到 i18n/tools 模块的问题
+_PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if _PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, _PROJECT_ROOT)
+
 import faiss
 import numpy as np
 from sklearn.cluster import MiniBatchKMeans

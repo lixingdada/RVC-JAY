@@ -9,8 +9,8 @@
 简单来说：
 
 ```bash
-git clone https://github.com/lixingdada/RVC.git
-cd RVC
+git clone https://github.com/lixingdada/RVC-JAY.git
+cd RVC-JAY
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirments_cu128_py312.txt

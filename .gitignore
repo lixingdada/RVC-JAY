@@ -64,3 +64,9 @@ Desktop.ini
 
 # ===== Trae 工具产物 =====
 .trae-html-share-packages/
+
+# ===== 分轮训练小模型（singer.pth 已是对应最终版，避免重复占空间）=====
+assets/weights/singer_e*.pth
+
+# ===== 冒烟测试音频 =====
+smoke_*.wav

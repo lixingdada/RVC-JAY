@@ -7,7 +7,7 @@ echo   RVC 临时文件清理工具
 echo ============================================
 echo.
 
-set "ROOT=D:\Retrieval-based-Voice-Conversion-WebUI"
+set "ROOT=%~dp0"
 
 echo [1/4] 清理 RVC 分离临时文件夹...
 for /d %%p in ("%ROOT%\TEMP\rvc-pymss-*") do (
